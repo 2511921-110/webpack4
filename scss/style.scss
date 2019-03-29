@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+$bg-color: yellow;
+html {
+  body {
+    background:rgba($bg-color,1);
+    background-image: url('../assets/mappin.png');
+    background-image: url('../assets/voice-ctm-2-pct-2.png');
+  }
+}

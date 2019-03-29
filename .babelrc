@@ -1,0 +1,159 @@
+{
+  "env": {
+    "current": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    },
+    "node8": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": 8
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    },
+    "node6": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": 6
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    },
+    "node4": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": 4
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime"
+      ]
+    },
+    "chrome": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "chrome": 60
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    },
+    "chrome50": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "chrome": 50
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    },
+    "Firefox": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "firefox": 55
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    },
+    "Firefox_beta": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "firefox": 56
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ]
+    },
+    "Safari": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "Safari": 11
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime"
+      ]
+    },
+    "Edge": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "Edge": 15
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime"
+      ]
+    },
+    "IE11": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "ie": 11
+            },
+            "useBuiltIns": "usage"
+          }
+        ]
+      ],
+      "plugins": [
+        "@babel/plugin-transform-runtime"
+      ]
+    }
+  }
+}
