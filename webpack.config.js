@@ -1,6 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
 
 // const ImageminPlugin = require("imagemin-webpack")
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -224,6 +225,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'style.css',
-    })
+    }),
+    new VueLoaderPlugin()
   ]
 };
