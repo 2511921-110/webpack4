@@ -7,7 +7,16 @@ console.log('bundle.jsのみでCSSも読み込むよ.なんでやねん')
 
 window.Vue = require('vue');
 
+//vue file
+import twitter from './twitter.vue'
 
+if (document.getElementById('twitter')) {
+new Vue({
+  el: '#twitter',
+  components: {twitter},
+  template : '<twitter>'
+})
+}
 if (document.getElementById('Posts')) {
   const postsInstance = new Vue({
     el: "#Posts",
