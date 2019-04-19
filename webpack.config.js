@@ -12,7 +12,7 @@ const imageminJpegtran = require("imagemin-jpegtran")
 const imageminOptipng = require("imagemin-optipng")
 const imageminSvgo = require("imagemin-svgo")
 
-const MODE = "development";
+const MODE = "development";//development or production
 const enabledSourceMap = MODE === "development";
 
 module.exports = [
@@ -171,7 +171,7 @@ module.exports = [
 
           {
             test: /\.(eot|otf|ttf|woff2?|svg)(\?.+)?$/,
-            loader: 'file-loader?name=fonts/[name].[ext]'
+            loader: 'file-loader?name=./fonts/[name].[ext]'
             // include: [
             //     path.resolve(__dirname, 'node_modules')
             // ],
@@ -192,7 +192,7 @@ module.exports = [
         server: { baseDir: ['../../bebo-lab/'] },
         // proxy: 'http://wise.local/',
         files: [
-          '../css/*.css',
+          '../*.css',
           '../*.php',
           '../*.html'
         ]
@@ -323,10 +323,10 @@ module.exports = [
     new BrowserSyncPlugin({
         host: 'localhost',
         port: 3000,
-        server: { baseDir: ['../../bebo-lab/'] },
+        server: { baseDir: ['../../R-and-K/'] },
         // proxy: 'http://wise.local/',
         files: [
-          '../css/*.css',
+          '../*.css',
           '../*.php',
           '../*.html'
         ]
