@@ -1,17 +1,17 @@
 import '../scss/bootstrap-grid.scss';
-import '../scss/fonts.scss';
 import '../scss/main.scss';
+import '../style.css';
 import Vue from 'vue/dist/vue.esm.js'
 import axios from 'axios'
 import "@babel/polyfill"
 import SweetScroll from "sweet-scroll"
-import VanillaModal from 'vanilla-modal'
-import lazySizes from 'lazysizes'
+// import VanillaModal from 'vanilla-modal'
+// import lazySizes from 'lazysizes'
 
 // console.log('bundle.jsのみでCSSも読み込むよ.なんでやねん')
 
 window.Vue = require('vue');
-lazySizes.init();
+// lazySizes.init();
 
 if(document.getElementsByClassName('modal')[0]){
 const modal = new VanillaModal(
@@ -63,36 +63,36 @@ nav_el.addEventListener("click",()=> {
 }, false)
 
 
-var controls = document.querySelectorAll('.nav .menu-item-has-children');
-for (var i = 0; i < controls.length; i++) {
-  controls[i].addEventListener('click', btnClick, false);
-}
+// var controls = document.querySelectorAll('.nav .menu-item-has-children');
+// for (var i = 0; i < controls.length; i++) {
+//   controls[i].addEventListener('click', btnClick, false);
+// }
 
-function btnClick() {
-  if(this.classList.contains('subnav_state')) {
-    this.classList.remove('subnav_state');
-    this.style.height = '';
-  } else {
-    this.classList.toggle('subnav_state');
-    this.style.transition = 'none';
-    this.style.height = 'auto';
-    const contentHeight = this.getBoundingClientRect().height;
-    this.style.height = '';
-    this.style.transition = '';
-    setTimeout(() => {
-      this.style.height = `${contentHeight}px`;
-      this.classList.add('subnav_state');
-    }, 30);
-  }
-}
+// function btnClick() {
+//   if(this.classList.contains('subnav_state')) {
+//     this.classList.remove('subnav_state');
+//     this.style.height = '';
+//   } else {
+//     this.classList.toggle('subnav_state');
+//     this.style.transition = 'none';
+//     this.style.height = 'auto';
+//     const contentHeight = this.getBoundingClientRect().height;
+//     this.style.height = '';
+//     this.style.transition = '';
+//     setTimeout(() => {
+//       this.style.height = `${contentHeight}px`;
+//       this.classList.add('subnav_state');
+//     }, 30);
+//   }
+// }
 
 
-const sot = document.querySelector('.sot');
-window.addEventListener('scroll', ()=> {
-  const windowHight = window.parent.screen.height;
-  if(window.pageYOffset > windowHight){
-    sot.style.opacity = '1';
-  }else if(window.pageYOffset < windowHight){
-    sot.style.opacity = '0';
-  }
-});
+// const sot = document.querySelector('.sot');
+// window.addEventListener('scroll', ()=> {
+//   const windowHight = window.parent.screen.height;
+//   if(window.pageYOffset > windowHight){
+//     sot.style.opacity = '1';
+//   }else if(window.pageYOffset < windowHight){
+//     sot.style.opacity = '0';
+//   }
+// });

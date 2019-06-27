@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+h1{
+  font-size:30px;
+  color: gray;
+}
+
+h2{
+  color: blue;
+  span{
+    font-size: 60px;
+  }
+}
+
+.nav{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #eee;
+  padding: 0.5em;
+}
+
+.first{
+  background: url('../assets/mappin.png');
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  h1,h2{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.second{
+  background-color: #eee;
+  padding: 3em;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  *{
+    width: 100%;
+  }
+}
