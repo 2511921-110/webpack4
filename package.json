@@ -12,12 +12,13 @@
     "@babel/polyfill": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@types/source-map": "^0.5.7",
-    "autoprefixer": "^9.5.0",
-    "axios": "^0.18.0",
+    "autoprefixer": "^9.6.0",
+    "axios": "^0.19.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.5",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.3",
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.2",
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
@@ -29,6 +30,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "html-critical-webpack-plugin": "^2.1.0",
     "imagemin": "^6.1.0",
     "imagemin-gifsicle": "^6.0.1",
     "imagemin-mozjpeg": "^8.0.0",
@@ -41,6 +43,7 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "sweet-scroll": "^4.0.0",
     "uglifyjs-webpack-plugin": "^2.1.2",
     "url-loader": "^1.1.2",
     "vue": "^2.6.10",
@@ -51,9 +54,12 @@
     "vue-tweet-embed": "^2.2.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
+    "webpack-critical": "^1.1.1",
     "webpack-stream": "^5.2.1"
   },
   "devDependencies": {
-    "browser-sync-webpack-plugin": "^2.2.2"
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0"
   }
 }
