@@ -30,6 +30,7 @@ html {
 @import "mixins/text-truncate";
 @import "mixins/text-hide";
 @import "mixins/hover";
+@import "mixins/size";
 
 
 @import "grid";
@@ -37,3 +38,5 @@ html {
 @import "utilities/flex";
 @import "utilities/spacing";
 @import "utilities/text";
+@import "utilities/align";
+@import "utilities/sizing";

@@ -1,5 +1,5 @@
 import '../scss/bootstrap-grid.scss';
-import '../scss/main.scss';
+import '../scss/crtcal.scss';
 import '../style.css';
 import Vue from 'vue/dist/vue.esm.js'
 import axios from 'axios'
