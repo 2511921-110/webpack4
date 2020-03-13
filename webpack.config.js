@@ -80,21 +80,12 @@ module.exports = {
               importLoaders: 2
             }
           },
-          {
+          /* {
             loader: 'postcss-loader',
             options: {
               sourceMap: true, //ソースマップを有効
-              plugins: [
-                require('autoprefixer')({
-                  grid: true, // CSS Grid Layout を使いたいんだ
-                  "browsers": [
-                    "> 1%",
-                    "IE 10"
-                  ]
-                })
-              ]
             }
-          },
+          }, */
           {
             loader: "sass-loader",
             options: {
@@ -156,11 +147,11 @@ module.exports = {
       filename: "index.html",
       inject: true
     }),
-    new HtmlWebpackPlugin({
+    /* new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/info/index.html"),
       filename: "info/index.html",
       inject: true
-    }),
+    }), */
     new MiniCssExtractPlugin({
       filename: "./css/[name].css",
       chunkFilename: "./css/[id].css"
