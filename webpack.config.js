@@ -105,7 +105,7 @@ module.exports = {
       },
       {
         test: /\.(eot|otf|ttf|woff2?|svg)(\?.+)?$/,
-        loader: 'file-loader?name=./fonts/[name].[ext]'
+        loader: 'file-loader?name=../fonts/[name].[ext]'
       }
       ,{
         test: /\.css$/,
