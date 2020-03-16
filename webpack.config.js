@@ -156,11 +156,11 @@ module.exports = {
       filename: "index.html",
       inject: true
     }),
-    new HtmlWebpackPlugin({
+    /* new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "./src/info/index.html"),
       filename: "info/index.html",
       inject: true
-    }),
+    }), */
     new MiniCssExtractPlugin({
       filename: "./css/[name].css",
       chunkFilename: "./css/[id].css"
